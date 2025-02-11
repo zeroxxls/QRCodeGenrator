@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import {QRCodeSVG} from 'qrcode.react';
-import './qrCodeGenerator.css'
+import './QrCodeGenerator.css'
 
 export const QrCodeGenerator =()=>{
-    const [value, setValue] = useState("try it");
+    const [value, setValue] = useState("");
     const [result, setResult] = useState('');
 
     const onClickHandler =()=>{
@@ -18,14 +18,14 @@ export const QrCodeGenerator =()=>{
 
     return(
         <div className='content-card'>
-            <div className='qrCode'>
-             {result !== '' ? <QRCodeSVG value={result}/> : "no content here"}
-            </div>
             <div className='card-tools'>
-                <input type="text" value={value} onChange={onChangeHandler} className='result'/>
+                <input placeholder='Введите текст...' type="text" value={value} onChange={onChangeHandler} className='result'/>
                 <button type='button' onClick={onClickHandler} className='generator-btn'>
                      Generate
                  </button>
+            </div>
+            <div className='qrCode'>
+             {result !== '' ? <QRCodeSVG value={result} size={150}/> : "no content"}
             </div>
         </div>
 
