@@ -6,8 +6,8 @@ export const Navigation =()=>{
         <nav className={s.top_bar}>
             <Link className= {s.nav} to="/generate">Gen QR code</Link>
             <Link className= {s.nav} to="/scan">Scan QR code</Link>
-            <Link className= {s.nav} to="/">Scan History</Link>
-            <Link className= {s.nav} to="/">Gen History</Link>
+            <Link className= {s.nav} to="/scanHistory">Scan History</Link>
+            <Link className= {s.nav} to="/generateHistory">Gen History</Link>
         </nav>
     )
 }
