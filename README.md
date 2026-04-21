@@ -6,3 +6,6 @@ Use here a Vite for more Experience
 
 In this Project i use a QR Code Generator Library - qrcode.react
 - https://www.npmjs.com/package/qrcode.react
+
+
+deployment - https://gen-pink.vercel.app/
